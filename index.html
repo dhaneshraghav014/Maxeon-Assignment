@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Task</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+
+  <!-- FAV ICON -->
+  <link rel="shortcut icon" href="images/sparrow favicon.png">
+
+  <!-- FONT START -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+  <!-- FONT END -->
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-fixed-top text-center" id="nav-bar">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><i class="far fa-sun"></i>Maxeon</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">Products</a></li>
+            <li><a href="#home">Features</a></li>
+            <li><a href="#home">Use Cases</a></li>
+            <li><a href="#home">Pricing</a></li>
+
+            <!-- LOG BUTTON START -->
+
+
+
+
+            <button id="button_align" onclick="document.getElementById('id01').style.display='block'"
+              style="width:auto;">Login</button>
+
+            <div id="id01" class="modal">
+
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                  <img src="images/avatar_img.jfif" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <button class="s_button" type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                  <button id="c_button" type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+
+
+
+            <!-- LOG BUTTON END -->
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+  </header>
+
+  <section>
+    <div class="container-fluid" id="nav_bottom_align">
+      <div class="row">
+        <div class="col-lg-12 p-0">
+          <div class="main_bg"></div>
+
+          <div class="hero_item">
+            <h1 class="h1_wfms">Where words fail, Music speaks.</h1>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REAL TIME CHAT START -->
+
+  <section>
+    <div class="fabs">
+      <div class="chat">
+        <div class="chat_header">
+          <span id="chat_head">Live Chat</span>
+          <div class="chat_loader"></div>
+          <div class="chat_option"><i class="zmdi zmdi-more-vert"></i>
+            <ul>
+              <li><span class="chat_color" style="border:solid 5px #2196F3" color="blue"></span></li>
+              <li><span class="chat_color" style="border:solid 5px #00bcd4" color="cyan"></span></li>
+              <li><span class="chat_color" style="border:solid 5px #607d8b" color="blue-grey"></span></li>
+              <li><span class="chat_color" style="border:solid 5px #4caf50" color="green"></span></li>
+              <li><span class="chat_color" style="border:solid 5px #8bc34a" color="light-green"></span></li>
+              <li><span class="chat_color" style="border:solid 5px #cddc39" color="lime"></span></li>
+              <li><span class="chat_color" style="border:solid 5px #ffc107" color="amber"></span></li>
+              <li><span class="chat_color" style="border:solid 5px #ff5722" color="deep-orange"></span></li>
+              <li><span class="chat_color" style="border:solid 5px #f44336" color="red"></span></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="chat_login">
+          <a id="chat_send_email" class="fab"><i class="zmdi zmdi-email"></i></a>
+          <input id="chat_log_email" placeholder="Email"></input>
+          <div class="chat_login_alert"></div>
+        </div>
+        <div id="chat_converse" class="chat_converse">
+          <span class="chat_msg_item chat_msg_item_admin">
+            <h6 class="h6_head">Hi There</h6>
+            Hello Ask Us Anithing, Share Your Feedback.
+          </span>
+        </div>
+        <div class="ch_align">
+          <span class="ch_text"><img class="ch_fav" src="images/sparrow favicon.png" alt="fav"> we run on
+            surveysparrow</span>
+        </div>
+        <div class="fab_field">
+          <a id="fab_listen" class="fab"><i class="zmdi zmdi-mic-outline"></i></a>
+          <a id="fab_send" class="fab"><i class="zmdi zmdi-mail-send"><img class="fab_icon" src="images/fab_send.jfif"
+                alt="fabsend"></i></a>
+          <textarea id="chatSend" name="chat_message" placeholder="Write a reply..."
+            class="chat_field chat_message"></textarea>
+        </div>
+      </div>
+      <a target="_blank" id="fab_help" class="fab"><i class="zmdi zmdi-help-outline">?</i></a>
+      <a id="prime" class="fab"><i class="prime zmdi zmdi-plus"><img class="sparrow_chat_icon"
+            src="images/Sparrow Bird.png" alt="icon"></i></a>
+    </div>
+  </section>
+
+  <!-- REAL TIME CHAT END -->
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
